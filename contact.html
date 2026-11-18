@@ -1,0 +1,78 @@
+<!--
+  contact.html — placeholders to replace:
+  - [YOUR NAME]                               : nav logo, footer
+  - images/favicon.ico                        : add a real favicon file
+  - images/og-image.png                       : add a real social-share image
+  - https://PLACEHOLDER-SITE-URL.github.io/   : your GitHub Pages URL (og:url)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Jia-He Su</title>
+  <meta name="description" content="Get in touch with Jia-He Su by email or phone." />
+
+  <!-- Open Graph (placeholder values) -->
+  <meta property="og:title" content="Contact - Jia-He Su" />
+  <meta property="og:description" content="Get in touch with Jia-He Su by email or phone." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://PLACEHOLDER-SITE-URL.github.io/contact.html" />
+  <meta property="og:image" content="images/og-image.png" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">Jia-He Su</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Get in touch</h1>
+        <p class="section-intro">Have a project in mind, a question, or just want to say hi? Reach out by email or phone.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:jsu300911@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">jsu300911@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+64204957288">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">020 495 7288</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Jia-He Su</p>
+      <ul class="footer-links">
+        <li><a href="mailto:jsu300911@gmail.com">Email</a></li>
+        <li><a href="tel:+64204957288">020 495 7288</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

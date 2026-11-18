@@ -1,0 +1,148 @@
+<!--
+  projects.html — placeholders to replace:
+  - [YOUR NAME]                              : nav logo, footer
+  - images/stationery-screenshot.png         : replace with real Stationery Showcase screenshot
+  - Project descriptions                     : personalise with real project details
+  - https://PLACEHOLDER-STATIONERY-URL       : live link for Japanese Stationery Showcase
+  - images/favicon.ico                       : add a real favicon file
+  - images/og-image.png                      : add a real social-share image
+  - https://PLACEHOLDER-SITE-URL.github.io/  : your GitHub Pages URL (og:url)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Jia-He Su</title>
+  <meta name="description" content="A short list of web projects built by Jia-He Su, including a geotechnical consultancy website and a Japanese stationery showcase site." />
+
+  <!-- Open Graph (placeholder values) -->
+  <meta property="og:title" content="Projects — Jia-He Su" />
+  <meta property="og:description" content="A short list of web projects built by Jia-He Su." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://PLACEHOLDER-SITE-URL.github.io/projects.html" />
+  <meta property="og:image" content="images/og-image.png" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">Jia-He Su</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Projects</h1>
+        <p class="section-intro">A few things I've built while learning web development.</p>
+
+        <div class="card-grid card-grid-2">
+          <article class="project-card project-card-featured" id="eco-action-nursery-trust">
+            <img src="images/eco-action-website-preview.png" alt="Preview of Eco-Action Nursery Trust website" />
+            <div class="project-card-body">
+              <h2>Eco-Action Nursery Trust</h2>
+              <p>
+                A multi-page website for a Christchurch community charity that grows eco-sourced
+                native trees and plants for the Red Zone. The site explains the trust's work,
+                shows volunteers how they can help, tracks progress, and gathers resources for
+                volunteers, with a responsive layout and navigation menu.
+              </p>
+              <ul class="project-tools">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="https://eco-action-nursery-trust.netlify.app/" class="btn btn-accent" target="_blank" rel="noopener">View live site</a>
+            </div>
+          </article>
+
+          <article class="project-card" id="whenuatek">
+            <img src="images/whenuatek-website-preview.png" alt="Preview of WhenuaTek website" />
+            <div class="project-card-body">
+              <h2>WhenuaTek</h2>
+              <p>
+                A multi-page website for WhenuaTek, a locally owned geotechnical, geological
+                and environmental engineering consultancy based in Christchurch and Mangawhai.
+                The site sets out their three areas of expertise, introduces the senior team,
+                and makes it easy for clients to get in touch through a contact form,
+                click-to-call and a clear "Request a consultation" call to action.
+              </p>
+              <ul class="project-tools">
+                <li>WordPress</li>
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a href="https://whenuatek.co.nz/" class="btn btn-accent" target="_blank" rel="noopener">View live site</a>
+            </div>
+          </article>
+
+          <article class="project-card" id="japanese-stationery-showcase">
+            <img src="images/stationery-website-preview.png" alt="Preview of Japanese Stationery project" />
+            <div class="project-card-body">
+              <h2>Japanese Stationery Showcase</h2>
+              <p>
+                A responsive showcase website built for a friend selling Japanese stationery, featuring clear product categories and a clean image-grid layout designed to present products effectively across different screen sizes.
+              </p>
+              <ul class="project-tools">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="https://6a7805e01830de242ae19ab8--japanese-stationery-website.netlify.app/" class="btn btn-accent" target="_blank" rel="noopener">View live site</a>
+            </div>
+          </article>
+
+          <!--
+            To add a third project, copy the template below inside .card-grid
+            and fill in the placeholders:
+
+          <article class="project-card" id="project-slug">
+            <img src="images/PLACEHOLDER-screenshot.png" alt="Placeholder screenshot of PROJECT NAME — replace with a real screenshot" />
+            <div class="project-card-body">
+              <h2>PROJECT NAME</h2>
+              <p>One-paragraph description of the project.</p>
+              <ul class="project-tools">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="https://PLACEHOLDER-PROJECT-URL" class="btn btn-accent" target="_blank" rel="noopener">View live site</a>
+            </div>
+          </article>
+
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Jia-He Su</p>
+      <ul class="footer-links">
+        <li><a href="mailto:jsu300911@gmail.com">Email</a></li>
+        <li><a href="tel:+64204957288">020 495 7288</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

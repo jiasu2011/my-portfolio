@@ -1,0 +1,159 @@
+<!--
+  index.html — placeholders to replace:
+  - [YOUR NAME]                          : appears in <title>, nav logo, hero heading, footer
+  - Hero title / intro paragraph text    : edit to your own voice
+  - About section paragraph              : personalise (who you are, NZ location, learning story)
+  - What I do card text                  : edit to match your actual services
+  - images/stationery-screenshot.png     : replace with real Stationery Showcase screenshot
+  - images/favicon.ico                   : add a real favicon file
+  - images/og-image.png                  : add a real social-share image
+  - https://PLACEHOLDER-SITE-URL.github.io/ : your GitHub Pages URL (og:url)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jia-He Su - Web Developer</title>
+  <meta name="description" content="Portfolio of Jia-He Su, a beginner web developer building simple, fast websites with HTML, CSS, and JavaScript." />
+
+  <!-- Open Graph (placeholder values) -->
+  <meta property="og:title" content="Jia-He - Web Developer" />
+  <meta property="og:description" content="Portfolio of Jia-He, a beginner web developer building simple, fast websites." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://PLACEHOLDER-SITE-URL.github.io/" />
+  <meta property="og:image" content="images/og-image.png" />
+
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">Jia-He Su</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Jia-He Su</h1>
+        <p class="hero-title">Web Developer</p>
+        <p class="hero-intro">
+          Modern websites for businesses that want to make a better first impression.<br/>
+          I design and build clean, responsive websites that look professional, work smoothly, and help businesses present themselves clearly online.
+        </p>
+        <a href="contact.html" class="btn btn-accent">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p class="section-intro">
+          Hi, I’m Jia-He. I’m a web developer who enjoys turning ideas into clean, modern and easy-to-use websites.<br/>
+          I’m currently building my skills through hands-on projects, with a focus on HTML, CSS and responsive web design. I enjoy the mix of creativity and problem-solving that comes with web development, and I’m always looking for ways to improve the websites I build and create better experiences for the people using them.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>What I do</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Website builds</h3>
+            <p>Simple, well-structured websites built from scratch with clean HTML and CSS.</p>
+          </div>
+          <div class="card">
+            <h3>Responsive design</h3>
+            <p>Pages that work just as well on a phone as they do on a desktop screen.</p>
+          </div>
+          <div class="card">
+            <h3>Simple &amp; fast sites</h3>
+            <p>No unnecessary bloat — lightweight pages that load quickly and stay easy to update.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="pill-list">
+          <li class="pill">HTML</li>
+          <li class="pill">CSS</li>
+          <li class="pill">JavaScript</li>
+          <li class="pill">Responsive Design</li>
+          <li class="pill">Git/GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="card-grid card-grid-2">
+          <article class="project-card project-card-featured">
+            <img src="images/eco-action-website-preview.png" alt="Preview of Eco-Action Nursery Trust website" />
+            <div class="project-card-body">
+              <h3>Eco-Action Nursery Trust</h3>
+              <p>A multi-page website for a Christchurch community charity that grows native trees and plants for the Red Zone, with clear sections on who they are, how volunteers can help, and resources for getting involved.</p>
+              <a href="https://eco-action-nursery-trust.netlify.app/" class="btn btn-accent" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/whenuatek-website-preview.png" alt="Preview of WhenuaTek website" />
+            <div class="project-card-body">
+              <h3>WhenuaTek</h3>
+              <p>A professional website for a geotechnical, geological and environmental engineering consultancy with offices in Christchurch and Northland, presenting their services, senior team and an easy way to request a consultation.</p>
+              <a href="https://whenuatek.co.nz/" class="btn btn-accent" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/stationery-website-preview.png" alt="Preview of Japanese Stationery project" />
+            <div class="project-card-body">
+              <h3>Japanese Stationery Showcase</h3>
+              <p>A responsive showcase website built for a friend selling Japanese stationery, featuring clear product categories and a clean image-grid layout designed to present products effectively across different screen sizes.</p>
+             <a href="https://6a7805e01830de242ae19ab8--japanese-stationery-website.netlify.app/" class="btn btn-accent" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Let's work together</h2>
+        <p>Have a project in mind, or just want to say hi? I'd like to hear from you.</p>
+        <a href="contact.html" class="btn btn-accent">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Jia-He Su</p>
+      <ul class="footer-links">
+        <li><a href="mailto:jsu300911@gmail.com">Email</a></li>
+        <li><a href="tel:+64204957288">020 495 7288</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
